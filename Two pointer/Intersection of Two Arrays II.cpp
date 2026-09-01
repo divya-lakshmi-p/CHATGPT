@@ -145,3 +145,16 @@ int main()
 
   intersection( brr,n,m ,mp);
 }
+
+
+
+
+                 Intersection II
+                       │
+        ┌──────────────┼──────────────┐
+        ↓              ↓              ↓
+   Sort + TP       Multiset       Hashing
+        │              │              │
+   exploit order    store copies   store counts
+        │              │              │
+   O(n log n)       O(n log n)     O(n) expected
