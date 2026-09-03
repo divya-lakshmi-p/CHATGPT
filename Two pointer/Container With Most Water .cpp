@@ -84,7 +84,7 @@ void containerwithwater(int arr[] ,int n)
 
     maxarea = max(maxarea , (width * height));
 
-    if(arr[left] < arr[ right])
+    if(arr[left] <=  arr[ right]) //why equal means if both pointer reaches the same value means we can move either left or right enything is good
     {
       left++;
     }
