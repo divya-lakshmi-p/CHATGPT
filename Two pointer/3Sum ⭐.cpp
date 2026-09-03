@@ -46,6 +46,51 @@ O(n²)
 
 
 
+
+
+
+
+Goal:
+Find all unique triplets whose sum = target.
+(Common version: target = 0)
+
+Pattern:
+Sorting + 1 fixed index + Two Pointers
+
+1. Sort array
+2. Fix i
+3. left = i + 1
+4. right = n - 1
+
+sum = arr[i] + arr[left] + arr[right]
+
+sum < target → left++
+sum > target → right--
+sum == target → store + move both
+
+Duplicates:
+skip duplicate i
+skip duplicate left
+skip duplicate right
+
+Think:
+
+3Sum
+= Fix 1 number
++ 2Sum using Two Pointers
+
+TC:
+O(n²)
+
+
+
+
+
+Core idea:
+Freeze i, then solve the remaining 2Sum problem.
+
+
+
 #include<bits/stdc++.h>
 using  namespace std;
 
