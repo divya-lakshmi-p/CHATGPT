@@ -21,6 +21,9 @@ sum > target → right--
 
 
 
+Core logic:
+Small sum → need a bigger value → left++
+Large sum → need a smaller value → right--
 
 
 
