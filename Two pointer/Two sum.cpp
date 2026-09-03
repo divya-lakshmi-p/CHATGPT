@@ -21,6 +21,43 @@ sum > target → right--
 
 
 
+
+
+
+
+
+  Goal:
+Find 2 numbers whose sum = target.
+
+Pattern:
+Sorting + Two Pointers
+
+1. Sort array
+2. left = 0
+3. right = n - 1
+
+sum = arr[left] + arr[right]
+
+sum < target → left++
+sum > target → right--
+sum == target → answer found
+
+Think:
+
+2Sum
+= Direct Two Pointers
+
+TC:
+O(n log n) including sorting
+O(n) if array is already sorted
+
+
+
+
+
+
+
+
 1.Brute force approach 
 #include<bits/stdc++.h>
 using namespace std;
