@@ -20,6 +20,51 @@ while keeping the closest value.
 
 
 
+Goal:
+Find 3 numbers whose sum is closest to target.
+
+Pattern:
+Sorting + 1 fixed index + Two Pointers
+
+1. Sort array
+2. Initialize closest with first valid 3-number sum
+3. Fix i
+4. left = i + 1
+5. right = n - 1
+
+sum = arr[i] + arr[left] + arr[right]
+
+Check:
+if abs(sum - target) < abs(closest - target)
+    closest = sum
+
+sum < target → left++
+sum > target → right--
+sum == target → return immediately
+
+Think:
+
+3Sum Closest
+= Fix 1 number
++ 2Sum using Two Pointers
++ Keep the closest sum
+
+TC:
+O(n²)
+
+
+
+
+
+
+Core Idea:
+3Sum:
+"Did I get target?"
+
+3Sum Closest:
+"How close did I get to target?"
+
+  
 
 
 
