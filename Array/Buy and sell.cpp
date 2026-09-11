@@ -2,7 +2,7 @@
 using namespace std;
 void buyandsell(int arr[] , int n)
 {
-    int profit , minprice = INT_MAX , maxprofit = INT_MIN;
+    int minprice = INT_MAX , maxprofit = INT_MIN;
 
     for(int i=0; i<n; i++)
     {
